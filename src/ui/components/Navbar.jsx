@@ -29,11 +29,10 @@ export const Navbar = () => {
                             </NavLink>
                     </ul>
                 </div>
-                <div className="navbar-collapse">
+                <div className="navbar-collapse d-flex justify-content-end">
                     <ul className="navbar-nav ml-auto">
-                        <NavLink to="/login" className={ ({isActive}) => `nav-link ${isActive ? 'active' : ''}` }>
-                            Login
-                        </NavLink>
+                        <span className='nav-item nav-link text-white'><strong>Admin</strong></span>
+                        <button className='nav-item nav-link btn'>Logout</button>
                     </ul>
                 </div>
             </div>

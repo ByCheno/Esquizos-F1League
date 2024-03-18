@@ -1,8 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom"
-import { DriversInfo } from "../r-drivers/pages/DriversInfo"
-import { DriversStandings } from "../r-drivers/pages/DriversStandings"
-import { TeamsInfo } from "../r-teams/pages/TeamsInfo"
-import { TeamsStandings } from "../r-teams/pages/TeamsStandings"
+import { DriversInfo, DriversStandings } from "../r-drivers"
+import { TeamsInfo, TeamsStandings } from "../r-teams"
 import { Navbar } from "../ui"
 import { Login } from "../auth/pages/Login"
 
