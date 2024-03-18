@@ -1,13 +1,11 @@
+import { AppRouter } from './router/AppRouter';
 
-
-
-function App() {
-
+export const App = () => {
   return (
-    <>
-      <h1>Hola</h1>
-    </>
+    
+    <AppRouter />
+
   )
 }
 
-export default App
+export default App;
