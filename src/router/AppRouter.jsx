@@ -1,8 +1,9 @@
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { DriversInfo, DriversStandings } from "../r-drivers"
 import { TeamsInfo, TeamsStandings } from "../r-teams"
 import { Navbar } from "../ui"
-import { Login } from "../auth/pages/Login"
+import { Welcome } from "../pages/Welcome"
+// import { Login } from "../auth/pages/Login"
 
 export const AppRouter = () => {
     return (
@@ -12,7 +13,7 @@ export const AppRouter = () => {
 
             <Routes>
                 {/* Ruta por defecto, POR HACER: ESTABLECER UNA RUTA DE INICIO DE LA WEB */}
-                <Route path="/*" element={<Navigate to={'/driversInfo'} />} />
+                <Route path="/*" element={<Welcome/>} />
 
                 {/* Rutas para los pilotos */}
                 <Route path="driversInfo" element={<DriversInfo />} />
@@ -23,7 +24,7 @@ export const AppRouter = () => {
                 <Route path="teamsStandings" element={<TeamsStandings />} />
 
                 {/* Ruta para el login */}
-                <Route path="login" element={<Login />} />
+                {/* <Route path="login" element={<Login />} /> */}
             </Routes>
         </>
     )
